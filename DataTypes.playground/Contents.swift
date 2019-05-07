@@ -1,6 +1,6 @@
 import UIKit
 
-// Типы данных
+// Типы данных Int, String, Substring, Double, Float, Bool, Convert, Character
 //Swift - язык со строгой типизацией
 
 // Int, в 64-разрядных системах Int означает Int64, в 32-разрядных Int32
@@ -18,4 +18,17 @@ let v3 = Int8.max  // 127
 
 let v4 = UInt8.min  // 0
 let v5 = UInt8.max  // 255
+
+// использование кавычек внутри текста, подстановка значений
+let s1 = "my text is \"\(v1)\" and number = \(v2)"
+
+
+// Запомните, что среди целочисленных типов данных Apple рекомендует использовать только типы Int и UInt.
+var b1 = UInt.min
+var b2 = UInt.max
+
+// Преобразование типов
+let three = 3
+let pointOne = 0.14159
+let numberPi = Double(three) + pointOne
 

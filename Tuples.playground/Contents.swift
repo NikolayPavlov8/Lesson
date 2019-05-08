@@ -22,15 +22,25 @@ print("Код статуса: \(statusCode)")
 print("Сообщение: \(statusMessage)")
 
 // задается одна переменная
+// символ нижнего подчеркивание в Swift означает игнорирование параметров.
 let (justStatusCode, _) = http404Error
 print("Только код статуса: \(justStatusCode)")
 
-// вывод кортежа другим способом, по номеру
+// вывод кортежа другим способом, выводим информацию с использованием индексов
 print("Код статуса: \(http404Error.0)")
 print("Сообщение: \(http404Error.1)")
 
-// даем имена кортежам
+// задаем имена для доступа к элементам
 let http200Status = (statusCode1: 200, descrition: "OK")
 print("Код статуса: \(http200Status.statusCode1)")
 print("Сообщение: \(http200Status.descrition)")
+
+// изменение значений кортежей
+// объявляем кортеж
+var someTuple = (200, true)
+// изменяем значение отдельного элемента
+someTuple.0 = 404
+someTuple.1 = false
+someTuple
+
 

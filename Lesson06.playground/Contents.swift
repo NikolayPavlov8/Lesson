@@ -36,4 +36,21 @@ if let a = a { // попытка извлечение значение и зап
     print(a + 5)
 }
 
+// Пример: Tuple. Где можно применять опционы
+// force unwrapping
+// опциональный кортеж (контейнер над самим кортежем) - требуется извлечение всего кортежа
+var optTuple: (Int, str: String)? = (6, "test")
+print(optTuple!.0)
+print(optTuple!.str)
+
+// опциональные значения кортежа - требуется извлечение каждого значения
+var optTupleValue: (Int?, String?) = (1, "test2")
+print(optTupleValue.0!)
+print(optTupleValue.1!)
+
+// опциональный кортеж и его значения - требуется] извлечение всего кортежа и каждого значения
+var optTupleWithValue: (Int?, String?)? = (5, "test3")
+print(optTupleWithValue!.0!)
+print(optTupleWithValue!.1!)
+
 

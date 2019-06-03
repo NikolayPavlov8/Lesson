@@ -7,3 +7,4 @@ import UIKit
 // class (класс)
 
 // enum (перечисление)
+
